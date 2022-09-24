@@ -4,6 +4,9 @@
       <h2 class="text-2xl text-gray-900 font-medium">Review Order</h2>
 
       <!-- ITEM -->
+      <!-- SearchModal의 ITEM과 같음 -->
+
+      <ProductList :products="productsInCart" />
 
       <!-- TOTAL -->
       <div class="flex items-end justify-end text-lg">
@@ -18,8 +21,13 @@
 import Vue from "vue";
 
 import products from "../../../../utils/data/products.json";
+import ProductList from "./ProductList.vue";
 
 export default Vue.extend({
+  components: {
+    ProductList,
+  },
+
   data() {
     return {
       products,

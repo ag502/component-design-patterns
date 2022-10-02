@@ -20,7 +20,7 @@
 <script lang="ts">
 import Vue from "vue";
 
-import products from "../../../../utils/data/products.json";
+import products from "../../../../../utils/data/products.json";
 import ProductList from "./ProductList.vue";
 
 export default Vue.extend({

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <SearchModal />
-    <ReviewOrder />
+    <SearchModalAfter />
+    <ReviewOrderAfter />
   </div>
 </template>
 
@@ -9,14 +9,17 @@
 import Vue from "vue";
 
 import "./styles/index.css";
-import { ReviewOrder, SearchModal } from "./components/before";
+import {
+  ReviewOrderAfter,
+  SearchModalAfter,
+} from "./components/configuration/after";
 
 export default Vue.extend({
   name: "App",
 
   components: {
-    SearchModal,
-    ReviewOrder,
+    SearchModalAfter,
+    ReviewOrderAfter,
   },
 });
 </script>

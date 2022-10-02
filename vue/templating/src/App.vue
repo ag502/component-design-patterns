@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="../../utils/images/brownie.jpg" />
-    <h1>TEST</h1>
+    <!-- <SearchModal />
+    <ReviewOrder /> -->
+    <SearchModalAfter />
+    <ReviewOrderAfter />
   </div>
 </template>
 
@@ -9,8 +11,24 @@
 import Vue from "vue";
 import "./styles/index.css";
 
+import { SearchModal, ReviewOrder } from "./components/before";
+import { SearchModalAfter, ReviewOrderAfter } from "./components/after";
+
 export default Vue.extend({
   name: "App",
+
+  components: {
+    // SearchModal,
+    // ReviewOrder,
+    SearchModalAfter,
+    ReviewOrderAfter,
+  },
+
+  data() {
+    return {
+      isBefore: true,
+    };
+  },
 });
 </script>
 

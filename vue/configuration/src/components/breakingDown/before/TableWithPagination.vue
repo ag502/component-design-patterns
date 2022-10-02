@@ -91,6 +91,7 @@ export default {
       type: Boolean,
       default: false,
     },
+    // 테이블과 관련없는 props들 이므로 분리가능
     initialPage: {
       type: Number,
       default: 0,

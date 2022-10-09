@@ -23,7 +23,7 @@ export default Vue.extend({
     };
   },
 
-  provide() {
+  provide(): { tabState: object; activateTab: (id: string) => void } {
     let tabState = {};
 
     Object.defineProperty(tabState, "activeTab", {
